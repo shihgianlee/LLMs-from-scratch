@@ -1,0 +1,2 @@
+1. For x86, install requirements_macOS-x86.txt
+2. Execute conda create --name <name> nomkl tensorflow python=3.11 -y
