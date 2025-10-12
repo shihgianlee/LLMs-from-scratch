@@ -118,6 +118,24 @@ The code in the main chapters of this book is designed to run on conventional la
 <a href="https://www.manning.com/livevideo/master-and-build-large-language-models"><img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/video-screenshot.webp?123" width="350px"></a>
 
 
+&nbsp;
+
+
+## Companion Book / Sequel
+
+[*Build A Reasoning Model (From Scratch)*](https://mng.bz/lZ5B), while a standalone book, can be considered as a sequel to *Build A Large Language Model (From Scratch)*.
+
+It starts with a pretrained model and implements different reasoning approaches, including inference-time scaling, reinforcement learning, and distillation, to improve the model's reasoning capabilities. 
+
+Similar to *Build A Large Language Model (From Scratch)*, [*Build A Reasoning Model (From Scratch)*](https://mng.bz/lZ5B) takes a hands-on approach implementing these methods from scratch.
+
+<a href="https://mng.bz/lZ5B"><img src="https://sebastianraschka.com/images/reasoning-from-scratch-images/cover.webp?123" width="120px"></a>
+
+- Amazon link (TBD)
+- [Manning link](https://mng.bz/lZ5B)
+- [GitHub repository](https://github.com/rasbt/reasoning-from-scratch)
+
+<br>
 
 &nbsp;
 ## Exercises
@@ -140,7 +158,7 @@ Several folders contain optional materials as a bonus for interested readers:
   - [Installing Python Packages and Libraries Used In This Book](setup/02_installing-python-libraries)
   - [Docker Environment Setup Guide](setup/03_optional-docker-environment)
 - **Chapter 2: Working with text data**
-  - [Byte Pair Encoding (BPE) Tokenizer From Scratch](ch02/05_bpe-from-scratch/bpe-from-scratch.ipynb)
+  - [Byte Pair Encoding (BPE) Tokenizer From Scratch](ch02/05_bpe-from-scratch/bpe-from-scratch-simple.ipynb)
   - [Comparing Various Byte Pair Encoding (BPE) Implementations](ch02/02_bonus_bytepair-encoder)
   - [Understanding the Difference Between Embedding Layers and Linear Layers](ch02/03_bonus_embedding-vs-matmul)
   - [Dataloader Intuition with Simple Numbers](ch02/04_bonus_dataloader-intuition)
@@ -150,6 +168,8 @@ Several folders contain optional materials as a bonus for interested readers:
 - **Chapter 4: Implementing a GPT model from scratch**
   - [FLOPS Analysis](ch04/02_performance-analysis/flops-analysis.ipynb)
   - [KV Cache](ch04/03_kv-cache)
+  - [Grouped-Query Attention](ch04/04_gqa)
+  - [Multi-Head Latent Attention](ch04/05_mla)
 - **Chapter 5: Pretraining on unlabeled data:**
   - [Alternative Weight Loading Methods](ch05/02_alternative_weight_loading/)
   - [Pretraining GPT on the Project Gutenberg Dataset](ch05/03_bonus_pretraining_on_gutenberg)
@@ -165,7 +185,7 @@ Several folders contain optional materials as a bonus for interested readers:
   - [PyTorch Performance Tips for Faster LLM Training](ch05/10_llm-training-speed)
 - **Chapter 6: Finetuning for classification**
   - [Additional experiments finetuning different layers and using larger models](ch06/02_bonus_additional-experiments)
-  - [Finetuning different models on 50k IMDB movie review dataset](ch06/03_bonus_imdb-classification)
+  - [Finetuning different models on 50k IMDb movie review dataset](ch06/03_bonus_imdb-classification)
   - [Building a User Interface to Interact With the GPT-based Spam Classifier](ch06/04_user_interface)
 - **Chapter 7: Finetuning to follow instructions**
   - [Dataset Utilities for Finding Near Duplicates and Creating Passive Voice Entries](ch07/02_dataset-utilities)
@@ -175,6 +195,17 @@ Several folders contain optional materials as a bonus for interested readers:
   - [Generating a Preference Dataset with Llama 3.1 70B and Ollama](ch07/04_preference-tuning-with-dpo/create-preference-data-ollama.ipynb)
   - [Direct Preference Optimization (DPO) for LLM Alignment](ch07/04_preference-tuning-with-dpo/dpo-from-scratch.ipynb)
   - [Building a User Interface to Interact With the Instruction Finetuned GPT Model](ch07/06_user_interface)
+
+More bonus material from the [reasoning from scratch](https://github.com/rasbt/reasoning-from-scratch) repository:
+
+- **Qwen3 (from scratch) basics**
+  - [Qwen3 source code walkthrough](https://github.com/rasbt/reasoning-from-scratch/blob/main/chC/01_main-chapter-code/chC_main.ipynb) 
+  - [Optimized Qwen3](https://github.com/rasbt/reasoning-from-scratch/tree/main/ch02/03_optimized-LLM)
+- **Evaluation**
+  - [Verifier-based evaluation (MATH-500)](https://github.com/rasbt/reasoning-from-scratch/tree/main/ch03)
+  - [Multiple-choice evaluation (MMLU)](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/02_mmlu)
+  - [LLM leaderboard evaluation](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/03_leaderboards)
+  - [LLM-as-a-judge evaluation](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/04_llm-judge)
 
 <br>
 &nbsp;
