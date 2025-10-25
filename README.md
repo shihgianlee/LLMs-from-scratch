@@ -74,8 +74,8 @@ You can alternatively view this and other files on GitHub at [https://github.com
 | Ch 6: Finetuning for Text Classification                   | - [ch06.ipynb](ch06/01_main-chapter-code/ch06.ipynb)  <br/>- [gpt_class_finetune.py](ch06/01_main-chapter-code/gpt_class_finetune.py)  <br/>- [exercise-solutions.ipynb](ch06/01_main-chapter-code/exercise-solutions.ipynb) | [./ch06](./ch06)              |
 | Ch 7: Finetuning to Follow Instructions                    | - [ch07.ipynb](ch07/01_main-chapter-code/ch07.ipynb)<br/>- [gpt_instruction_finetuning.py](ch07/01_main-chapter-code/gpt_instruction_finetuning.py) (summary)<br/>- [ollama_evaluate.py](ch07/01_main-chapter-code/ollama_evaluate.py) (summary)<br/>- [exercise-solutions.ipynb](ch07/01_main-chapter-code/exercise-solutions.ipynb) | [./ch07](./ch07)  |
 | Appendix A: Introduction to PyTorch                        | - [code-part1.ipynb](appendix-A/01_main-chapter-code/code-part1.ipynb)<br/>- [code-part2.ipynb](appendix-A/01_main-chapter-code/code-part2.ipynb)<br/>- [DDP-script.py](appendix-A/01_main-chapter-code/DDP-script.py)<br/>- [exercise-solutions.ipynb](appendix-A/01_main-chapter-code/exercise-solutions.ipynb) | [./appendix-A](./appendix-A) |
-| Appendix B: References and Further Reading                 | No code                                                                                                                         | -                             |
-| Appendix C: Exercise Solutions                             | No code                                                                                                                         | -                             |
+| Appendix B: References and Further Reading                 | No code                                                                                                                         | [./appendix-B](./appendix-B) |
+| Appendix C: Exercise Solutions                             | - [list of exercise solutions](appendix-C)                                                                 | [./appendix-C](./appendix-C) |
 | Appendix D: Adding Bells and Whistles to the Training Loop | - [appendix-D.ipynb](appendix-D/01_main-chapter-code/appendix-D.ipynb)                                                          | [./appendix-D](./appendix-D)  |
 | Appendix E: Parameter-efficient Finetuning with LoRA       | - [appendix-E.ipynb](appendix-E/01_main-chapter-code/appendix-E.ipynb)                                                          | [./appendix-E](./appendix-E) |
 
@@ -168,8 +168,11 @@ Several folders contain optional materials as a bonus for interested readers:
 - **Chapter 4: Implementing a GPT model from scratch**
   - [FLOPS Analysis](ch04/02_performance-analysis/flops-analysis.ipynb)
   - [KV Cache](ch04/03_kv-cache)
-  - [Grouped-Query Attention](ch04/04_gqa)
-  - [Multi-Head Latent Attention](ch04/05_mla)
+  - [Attention alternatives](ch04/#attention-alternatives)
+    - [Grouped-Query Attention](ch04/04_gqa)
+    - [Multi-Head Latent Attention](ch04/05_mla)
+    - [Sliding Window Attention](ch04/06_swa)
+  - [Mixture-of-Experts (MoE)](ch04/07_moe)
 - **Chapter 5: Pretraining on unlabeled data:**
   - [Alternative Weight Loading Methods](ch05/02_alternative_weight_loading/)
   - [Pretraining GPT on the Project Gutenberg Dataset](ch05/03_bonus_pretraining_on_gutenberg)

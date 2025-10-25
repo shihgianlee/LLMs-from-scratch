@@ -101,7 +101,7 @@ The [gpt_with_kv_mha.py](gpt_with_kv_mha.py) and [gpt_with_kv_mla.py](gpt_with_k
 
 Here, the MLA code is inspired by the [https://huggingface.co/bird-of-paradise/deepseek-mla](https://huggingface.co/bird-of-paradise/deepseek-mla) implementation.
 
-Note that MLA can also be used in combination with GQA, but for simplicity, I this is not done here. (Currently, I am also not aware of a prominent LLM doing this.)
+Note that MLA can also be used in combination with [GQA](../04_gqa), but for simplicity, I this is not done here. (Currently, I am also not aware of a prominent LLM doing this.)
 
 Also note that the model is not trained and thus generates nonsensical text. However, you can use it as a drop-in replacement for the standard GPT model in chapters 5-7 and train it.
 
@@ -127,7 +127,7 @@ uv run gpt_with_kv_mla.py \
 --n_heads 24 \
 --n_layers 12 \
 --emb_dim 768 \
---latent_dim 192 # 4x compression
+--latent_dim 192 # (768×2)/192 = 8× compression
 
 ...
 
